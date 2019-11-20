@@ -1,3 +1,5 @@
+'use strict';
+
 // Меню;
 const createSiteMenuTemplate = () => {
   return (`
@@ -477,12 +479,9 @@ render(taskListElement, createTaskEditTemplate());
 new Array(3)
   .fill(``)
   .forEach(
-    () => render(taskListElement, createTaskTemplate())
+      () => render(taskListElement, createTaskTemplate())
   );
 
 const boardElement = siteMainElement.querySelector(`.board`);
 render(boardElement, createLoadMoreBtnTemplate());
-
-
-
 
