@@ -1,3 +1,5 @@
-export const createLoadMoreBtnTemplate = () => `
-  <button class="load-more" type="button">load more</button>
-  `;
+export const createLoadMoreButtonTemplate = () => {
+  return (
+    `<button class="load-more" type="button">load more</button>`
+  );
+};
